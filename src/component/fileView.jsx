@@ -1,4 +1,4 @@
-import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
+import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
 
 const overrideHeader = (state, previous, next) => {
   return (
@@ -11,14 +11,14 @@ const overrideHeader = (state, previous, next) => {
 
 const PreviewFileModal = () => {
   const docs = [
-    { uri: "/sample.pdf", fileType: "pdf" },
+    { uri: "/samplepdf.pdf", fileType: "pdf" },
     {
-      uri: "/img/quick-start-doctor.png",
-      fileType: "png",
+      uri: "https://uploads.codesandbox.io/uploads/user/46ef5051-8a21-46a0-ab94-60d6cd53ab10/l5RA-test-doc.docx",
+      fileType: "docx",
     },
     {
-      uri: "https://docs.google.com/document/d/13n4HGsSbT6CuACWHkGvtvboFtsFCPObozDTEcTKHq34/edit?usp=sharing",
-      fileType: "docx",
+      uri: "https://uploads.codesandbox.io/uploads/user/46ef5051-8a21-46a0-ab94-60d6cd53ab10/jYVg-test-excelaki.xlsx",
+      fileType: "xlsx",
     },
   ];
 
